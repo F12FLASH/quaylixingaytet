@@ -18,26 +18,7 @@
 
 <body>
 
-    <div id="video-container">
-        <video id="myVideo" autoplay playsinline>
-            <source src="./img/intro.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <script>
-        // Lấy tham chiếu đến video và container
-        const video = document.getElementById('myVideo');
-        const videoContainer = document.getElementById('video-container');
-
-        // Chờ cho video tải xong metadata
-        video.addEventListener('loadedmetadata', function() {
-            // Chờ cho video phát xong
-            video.addEventListener('ended', function() {
-                // Ẩn video khi phát xong
-                videoContainer.style.display = 'none';
-            });
-        });
-    </script>
+    
     <div class="pyro">
         <div class="before" style="z-index: 9999"></div>
         <div class="after"></div>
